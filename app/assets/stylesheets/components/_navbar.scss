@@ -1,12 +1,33 @@
-.navbar-lewagon {
-  justify-content: space-between;
+.navbar-mashi {
   background: white;
+  background: #FFFFFF;
+  box-shadow: 0px 6px 10px -10px;
+  padding-left: 20px;
+  padding-right: 30px;
+  height: 120px;
+  justify-content: space-evenly;
 }
 
-.navbar-lewagon .navbar-collapse {
-  flex-grow: 0;
+.navbar-mashi .navbar-collapse {
 }
 
-.navbar-lewagon .navbar-brand img {
-  width: 40px;
+.navbar-collapse {
+    flex-basis: 100%;
+    flex-grow: 0;
+    align-items: center;
 }
+.navbar-mashi .navbar-brand img {
+  width: 100px;
+}
+
+.left-header {
+  display: inline-block;
+}
+
+// .navbar-mashi {
+//   justify-content: space-between;
+//   background: #FFFFFF;
+//   box-shadow: 0px 6px 10px -10px;
+//   padding-left: 20px;
+//   padding-right: 30px;
+// }
