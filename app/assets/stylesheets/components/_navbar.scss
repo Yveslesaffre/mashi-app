@@ -1,11 +1,23 @@
 .navbar-mashi {
   background: white;
-  background: #FFFFFF;
   box-shadow: 0px 6px 10px -10px;
   padding-left: 20px;
   padding-right: 30px;
-  height: 120px;
+  height: 90px;
   justify-content: space-evenly;
+  font-family: 'Poiret One', cursive;
+  font-size: 21px;
+  z-index: 2;
+}
+
+.navbar-mashi a {
+  color: black;
+}
+
+.navbar-mashi a:hover {
+  text-decoration: none;
+  font-weight: bold;
+
 }
 
 .navbar-mashi .navbar-collapse {
@@ -16,7 +28,7 @@
     flex-grow: 0;
     align-items: center;
 }
-.navbar-mashi .navbar-brand img {
+.navbar-mashi img {
   width: 100px;
 }
 
@@ -24,10 +36,4 @@
   display: inline-block;
 }
 
-// .navbar-mashi {
-//   justify-content: space-between;
-//   background: #FFFFFF;
-//   box-shadow: 0px 6px 10px -10px;
-//   padding-left: 20px;
-//   padding-right: 30px;
-// }
+
