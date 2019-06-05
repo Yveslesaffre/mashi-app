@@ -1,0 +1,23 @@
+.get-started-button{
+  height: 70px;
+  font-family: 'Amatic SC', cursive;
+  text-decoration: bold;
+  font-size: 30px;
+  line-height: 32px;
+  text-align: center;
+  background-color:#7fa99b;
+  border-radius: 25px;
+  padding-top: 18px;
+  padding-right: 18px;
+  padding-left: 18px;
+  padding-bottom: 18px;
+  color:white;
+  margin-top: 150px;
+  margin-left: 20px;
+}
+
+.get-started-button:hover{
+  text-decoration: none;
+  background-color: #ffd98e;
+  color: black;
+}

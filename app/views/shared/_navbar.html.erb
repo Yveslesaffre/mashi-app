@@ -1,25 +1,17 @@
 
 <div class="navbar navbar-expand-sm navbar-light navbar-mashi">
 
-  <a href="">hrllo</a>
-  <a href="">hhhh</a>
-  <a href="">hhhh</a>
-  <%= link_to "#", class: "navbar-brand" do %>
-  <%= image_tag "logo.png" %>
-  <% end %>
-  <a href="">hhhh</a>
-  <a href="">hhhh</a>
-
+  <a><%= link_to "About Mashi" %></a>
+  <a><%= link_to "eShop" %></a>
+  <a><%= link_to "Something" %></a>
+  <%= image_tag "logo.png", class: "navbar-brand"%>
+  <a><%= link_to "Entretien" %></a>
+  <a><%= link_to "Contact" %></a>
 
   <div class="collapse navbar-collapse" id="navbarSupportedContent">
     <ul class="navbar-nav mr-auto">
       <% if user_signed_in? %>
-      <li class="nav-item dropdown">
-        <%= image_tag "https://kitt.lewagon.com/placeholder/users/ssaunier", class: "avatar dropdown-toggle", id: "navbarDropdown", data: { toggle: "dropdown" }, 'aria-haspopup': true, 'aria-expanded': false %>
-        <div class="dropdown-menu dropdown-menu-right" aria-labelledby="navbarDropdown">
-          <%= link_to "Action", "#", class: "dropdown-item" %>
-          <%= link_to "Another action", "#", class: "dropdown-item" %>
-          <%= link_to "Log out", destroy_user_session_path, method: :delete, class: "dropdown-item" %>
+      <li class <%= link_to "Log out", destroy_user_session_path, method: :delete, class: "dropdown-item" %>
         </div>
       </li>
       <% else %>
