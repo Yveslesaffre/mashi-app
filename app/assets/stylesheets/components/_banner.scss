@@ -2,7 +2,16 @@
   background-image: url('morocco1.jpg');
   background-size: cover;
   height: 100vh;
-  height: 580px;
+  height: 600px;
+  position: relative;
+}
+
+
+.banner-pic2 {
+  background-image: url('water.jpg');
+  background-size: cover;
+  // height: 140vh;
+  height: 630px;
   position: relative;
 }
 
@@ -34,4 +43,30 @@
 .spacing {
   margin-top: 230px;
   margin-left: 430px;
+}
+
+.text-landing2 {
+  color: white;
+  position: absolute;
+  background: transparent;
+  padding: 26px !important;
+  text-align: center;
+  width: 89%;
+  opacity: 0.9;
+  z-index: 999;
+  // margin: 0 auto;
+  margin-right: 260px;
+  left: 600;
+  right: 0;
+  top: 13%;
+}
+
+.text-landing2 h1 {
+  font-family: 'Amatic SC', cursive;
+  font-size: 55px;
+}
+
+.spacing2 {
+  margin-top: 300px;
+  margin-left: 100px;
 }
