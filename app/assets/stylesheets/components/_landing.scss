@@ -1,7 +1,7 @@
 .landing-page-text {
   font-family: 'Poiret One', cursive;
-  margin-right: 90px;
-  margin-left: 90px;
+  margin-right: 140px;
+  margin-left: 140px;
 }
 
 
@@ -16,6 +16,12 @@
   width: 350px;
 }
 
+.products-landing h1 {
+  font-family: 'Amatic SC', cursive;
+  font-size: 30px;
+  text-align: center;
+}
+
 .prefooter {
   display: flex;
   width: 100%;
@@ -26,10 +32,5 @@
   text-align: center;
   justify-content: space-around;
   align-items: center;
-}
-
-.products-landing h1 {
-  font-family: 'Amatic SC', cursive;
-  font-size: 30px;
-  text-align: center;
+  padding-top: 20px;
 }
