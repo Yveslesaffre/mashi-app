@@ -16,68 +16,100 @@
 <!-- <p>Here is a list of the products currently available for Sale. For any custom request, please check "Custom Made".</p> -->
 
 <div class="products-index-list">
+  <% @products.each do |product| %>
   <div class="card-product">
-    <img src="https://raw.githubusercontent.com/lewagon/fullstack-images/master/uikit/greece.jpg">
+    <%= link_to product_path(product) do %>
+      <%= image_tag product.image %>
+      <div class="card-product-infos">
+        <div>
+          <h2><%= product.name %></h2>
+          <br>
+          <p>Size: <%= product.height %>x<%= product.width %></p>
+          <p>Produced in <%= product.country %></p>
+        </div>
+        <h2 class="card-product-pricing">
+          <%= product.retail_price %>€
+        </h2>
+      </div>
+    <% end %>
+  <% end %>
+</div>
+<!-- IMPLEMENT SEEDS FOR EACH PRODUCT AND ITERATE OVER IT (SEE THANATOS EXAMPLE OR WATCHTOWER) -->
+<!-- <div class="products-index-list">
+  <div class="card-product">
+    <%= image_tag "placeholder3.jpg" %>
     <div class="card-product-infos">
       <div>
-        <h2>Title here</h2>
-        <p>Short description here!</p>
+        <h2>Musharabieh Rug</h2>
+        <br>
+        <p>Size: 220x130</p>
+        <p>Produced Taghazout, Morocco</p>
       </div>
-      <h2 class="card-product-pricing">£99.99</h2>
+      <h2 class="card-product-pricing">4100€</h2>
     </div>
   </div>
   <div class="card-product">
-    <img src="https://raw.githubusercontent.com/lewagon/fullstack-images/master/uikit/greece.jpg">
+    <%= image_tag "placeholder1.jpg" %>
     <div class="card-product-infos">
       <div>
-        <h2>Title here</h2>
-        <p>Short description hee!</p>
+        <h2>Ishalah Rug</h2>
+        <br>
+        <p>Size: 780x440</p>
+        <p>Produced in Lhassa, Tibet</p>
       </div>
-      <h2 class="card-product-pricing">£99.99</h2>
+      <h2 class="card-product-pricing">2200€</h2>
     </div>
   </div>
   <div class="card-product">
-    <img src="https://raw.githubusercontent.com/lewagon/fullstack-images/master/uikit/greece.jpg">
+    <%= image_tag "placeholder2.jpg" %>
     <div class="card-product-infos">
       <div>
-        <h2>Title here</h2>
-        <p>Short description here!</p>
+        <h2>Khalassemen Rug</h2>
+        <br>
+        <p>Size: 880x753</p>
+        <p>Produced in Tehran, Iran</p>
       </div>
-      <h2 class="card-product-pricing">£99.99</h2>
+      <h2 class="card-product-pricing">7800€</h2>
     </div>
   </div>
   <div class="card-product">
-    <img src="https://raw.githubusercontent.com/lewagon/fullstack-images/master/uikit/greece.jpg">
+    <%= image_tag "placeholder4.jpg" %>
     <div class="card-product-infos">
       <div>
-        <h2>Title here</h2>
-        <p>Short description here!</p>
+        <h2>Beni Ouhrain</h2>
+        <br>
+        <p>Size: 780x560</p>
+        <p>Produced in Rabat, Morocco</p>
       </div>
-      <h2 class="card-product-pricing">£99.99</h2>
+      <h2 class="card-product-pricing">12800€</h2>
     </div>
   </div>
   <div class="card-product">
-    <img src="https://raw.githubusercontent.com/lewagon/fullstack-images/master/uikit/greece.jpg">
+    <%= image_tag "placeholder5.jpg" %>
     <div class="card-product-infos">
       <div>
-        <h2>Title here</h2>
-        <p>Short description here!</p>
+        <h2>Sharjah Rani</h2>
+        <br>
+        <p>Size: 1480x780</p>
+        <p>Produced in Muscat, Oman</p>
       </div>
-      <h2 class="card-product-pricing">£99.99</h2>
+      <h2 class="card-product-pricing">14300€</h2>
     </div>
   </div>
   <div class="card-product">
-    <img src="https://raw.githubusercontent.com/lewagon/fullstack-images/master/uikit/greece.jpg">
+    <%= image_tag "placeholder6.png" %>
     <div class="card-product-infos">
       <div>
-        <h2>Title here</h2>
-        <p>Short description here!</p>
+        <h2>Rehmna Rug</h2>
+        <br>
+        <p>Size: 190x299</p>
+        <p>Produced in Casablanca, Morocco</p>
       </div>
-      <h2 class="card-product-pricing">£99.99</h2>
+      <h2 class="card-product-pricing">1300€</h2>
     </div>
   </div>
   <br>
-  <br>
+  <br> -->
 
 
 
